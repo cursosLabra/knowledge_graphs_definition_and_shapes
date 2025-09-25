@@ -10,7 +10,11 @@ prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
  :employer   @:Organization * ;
 }
 :Place {
- :country  @:Country ? ;
+    :country @:Country
 }
-:Country {}
-:Organization {}
+:Organization {
+    a [ :Organization ]
+}
+:Country {
+    a [ :Country ]
+}
