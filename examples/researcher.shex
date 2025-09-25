@@ -9,10 +9,8 @@ prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
  :birthDate  xsd:date       ? ;
  :employer   @:Organization * ;
 }
-
-:Organization { 
- rdfs:label  xsd:string ;
-}
 :Place {
- rdfs:label  xsd:string ;
+ :country  @:Country ? ;
 }
+:Country {}
+:Organization {}
